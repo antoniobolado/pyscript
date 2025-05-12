@@ -1,9 +1,9 @@
-from js import document
+import arrr
+from pyscript import document
 
-def mostrar_mensagem(event=None):
-    mensagem = document.getElementById("mensagem")
-    mensagem.innerText = "Você clicou no botão! 🎉"
 
-# conecta a função ao botão
-botao = document.getElementById("meu-botao")
-botao.addEventListener("click", mostrar_mensagem)
+def translate_english(event):
+    input_text = document.querySelector("#english")
+    english = input_text.value
+    output_div = document.querySelector("#output")
+    output_div.innerText = arrr.translate(english)
