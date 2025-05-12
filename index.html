@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>PyScript com botão</title>
-    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  <meta charset="UTF-8">
+  <title>PyScript com botão</title>
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 </head>
 <body>
-    <h1>Exemplo PyScript com botão</h1>
+  <h1>Exemplo PyScript + Botão</h1>
 
-    <button id="meu-botao" py-click="mostrar_mensagem()">Clique aqui</button>
-    <p id="saida"></p>
+  <button id="meu-botao">Clique aqui</button>
+  <p id="mensagem"></p>
 
-    <py-config src="pyscript.toml"></py-config>
-    <py-script src="main.py"></py-script>
+  <py-config src="pyscript.toml"></py-config>
+  <py-script src="main.py"></py-script>
 </body>
 </html>
