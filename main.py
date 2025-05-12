@@ -1,9 +1,5 @@
-import arrr
-from pyscript import document
+from pyscript import display, when, html
 
-
-def translate_english(event):
-    input_text = document.querySelector("#english")
-    english = input_text.value
-    output_div = document.querySelector("#output")
-    output_div.innerText = arrr.translate(english)
+@when("click", "#meu-botao")
+def clique_botao(event):
+    display("Você clicou no botão! 🎉", target="mensagem")
