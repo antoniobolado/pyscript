@@ -1,4 +1,5 @@
-def saudacao():
-    return "Olá, PyScript no GitHub Pages!"
+from pyscript import Element
 
-print(saudacao())
+def mostrar_mensagem():
+    saida = Element("saida")
+    saida.element.innerText = "Você clicou no botão! 🎉"
